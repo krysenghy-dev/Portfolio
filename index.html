@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kry Senghy — Full-Stack Developer</title>
+<meta name="description" content="Portfolio of Kry Senghy, a full-stack developer studying IT Engineering at RUPP.">
+<meta property="og:title" content="Kry Senghy — Full-Stack Developer">
+<meta property="og:description" content="Portfolio of Kry Senghy, a full-stack developer studying IT Engineering at RUPP.">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="grid-bg"></div>
+<div class="glow glow-1"></div>
+<div class="glow glow-2"></div>
+<canvas id="particles" aria-hidden="true"></canvas>
+<div class="spotlight" id="spotlight"></div>
+
+<header id="header">
+  <div class="nav-inner">
+    <a href="#home" class="logo">Kry<span>.</span>Senghy</a>
+    <nav><ul>
+      <li><a href="#home" class="nav-link active">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#education" class="nav-link">Education</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul></nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#education">Education</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<main>
+  <section id="home" class="hero">
+    <div class="wrap hero-inner">
+      <div>
+        <div class="hero-eyebrow">Hi, I'm Senghy</div>
+        <h1>Full-Stack Developer, <em>building things that actually run.</em></h1>
+        <p class="lead">3rd-year IT Engineering student at the Institute of Technology of Cambodia (ITE), RUPP. I design and build management systems end-to-end — from database schema to the screen you click on.</p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-secondary">Contact Me</a>
+        </div>
+        <div class="hero-social">
+          <a href="https://github.com/krysenghy-dev" class="icon-link" aria-label="GitHub" target="_blank" rel="noopener">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55v-2.15c-3.2.7-3.88-1.36-3.88-1.36-.52-1.34-1.28-1.7-1.28-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18a11.07 11.07 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.77.12 3.06.74.8 1.19 1.83 1.19 3.09 0 4.43-2.7 5.4-5.27 5.69.42.36.78 1.07.78 2.16v3.2c0 .3.2.66.79.55A10.52 10.52 0 0 0 23.5 12c0-6.27-5.23-11.5-11.5-11.5Z"/></svg>
+          </a>
+          <a href="https://t.me/KRYSENGHY" class="icon-link" aria-label="Telegram" target="_blank" rel="noopener">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M22.05 2.44 1.9 10.4c-1.34.55-1.33 1.31-.24 1.64l5.15 1.6 1.99 6.06c.24.66.42.92.86.92.42 0 .61-.19.85-.42l2.04-1.98 4.24 3.13c.78.43 1.34.21 1.54-.72l2.79-13.14c.3-1.14-.44-1.65-1.07-1.05Zm-13.4 10.6-1.36-4.53 9.9-6.24c.47-.28.9-.13.55.18L9.65 13.4Z"/></svg>
+          </a>
+          <a href="https://web.facebook.com/seng.hy.542467" class="icon-link" aria-label="Facebook" target="_blank" rel="noopener">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5.02 3.66 9.18 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.51 1.49-3.9 3.77-3.9 1.09 0 2.24.2 2.24.2v2.47h-1.26c-1.24 0-1.63.78-1.63 1.57v1.88h2.78l-.44 2.9h-2.34V22c4.78-.76 8.44-4.92 8.44-9.94Z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="avatar-ring"><img class="avatar-photo" src="img.png" alt="" width="480" height="480"></div>
+        <div class="code-chip">SENGHY</div>
+        <div class="code-chip">Web Developer</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap">
+      <div class="about-grid">
+        <div class="reveal">
+          <div class="eyebrow">About</div>
+          <h2 style="margin-bottom:20px;">A student developer who ships real systems.</h2>
+          <p>I'm <strong>Kry Senghy</strong>, a 3rd-year Information Technology Engineering student at RUPP. I specialize in building <strong>full-stack management systems</strong> — apps with real data, real workflows, and people who actually depend on them working correctly.</p>
+          <p>My approach: understand the problem before writing code, keep the database schema clean, and build UI that doesn't get in the way. I'm most interested in backend logic and system design, but I care about the front end feeling solid too.</p>
+        </div>
+        <div class="reveal stats">
+          <div class="stat"><b data-count="3">0</b><span>Projects Built</span></div>
+          <div class="stat"><b data-count="3">0</b><span>Year of Study</span></div>
+          <div class="stat"><b data-count="8">0</b><span>Technologies</span></div>
+          <div class="stat"><b data-count="1">0</b><span>University — RUPP</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow">Skills</div>
+        <h2>What I build with</h2>
+        <p>The stack I use day to day — replace this list with your own technologies.</p>
+      </div>
+      <div class="skill-cols">
+        <div class="skill-col reveal">
+          <h3>Frontend</h3>
+          <div class="skill-chip-list">
+            <div class="skill-chip">HTML &amp; CSS</div>
+            <div class="skill-chip">JavaScript</div>
+            <div class="skill-chip">React</div>
+          </div>
+        </div>
+        <div class="skill-col reveal">
+          <h3>Backend</h3>
+          <div class="skill-chip-list">
+            <div class="skill-chip">Node.js / Express</div>
+            <div class="skill-chip">PHP</div>
+            <div class="skill-chip">Java</div>
+          </div>
+        </div>
+        <div class="skill-col reveal">
+          <h3>Database</h3>
+          <div class="skill-chip-list">
+            <div class="skill-chip">MySQL</div>
+            <div class="skill-chip">MongoDB</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow">Projects</div>
+        <h2>Things I've built</h2>
+        <p>Three full-stack management systems — swap in screenshots, links, and real descriptions.</p>
+      </div>
+      <div class="filters reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+        <button class="filter-btn" data-filter="backend">Backend</button>
+        <button class="filter-btn" data-filter="frontend">Frontend</button>
+      </div>
+      <div class="project-grid" id="projectGrid">
+
+        <div class="project-card reveal" data-cat="fullstack">
+          <div class="project-thumb">
+            <video src="./hotel.mp4"autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover;"></video>
+          </div>
+          <div class="project-body">
+            <h3>Hotel Management System</h3>
+            <p class="desc">A system for handling room bookings, guest check-in/out, and billing.</p>
+            <p class="problem">Solves: manual booking records leading to double-bookings and lost billing info.</p>
+            <div class="tag-row"><span class="tag">HTML,CSS,JS,BOOTSTRAP</span><span class="tag">PHP Laraval</span><span class="tag">MySQL</span></div>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-cat="fullstack">
+          <div class="project-thumb">
+            <video src="./order.mp4"autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover;"></video>
+          </div>
+          <div class="project-body">
+            <h3>Order Management System</h3>
+            <p class="desc">Tracks customer orders from placement through fulfillment and payment.</p>
+            <p class="problem">Solves: no central view of order status across staff, causing delays and errors.</p>
+            <div class="tag-row"><span class="tag">JAVA Swing(FORM)</span><span class="tag">Java</span><span class="tag">MySQL</span></div>
+          </div>
+        </div>
+        <div class="project-card reveal" data-cat="frontend">
+  <div class="project-thumb">
+<video src="./transport.mp4"autoplay muted loop playsinline style="width:100%;height:100%;object-fit:cover;"></video>
+  </div>
+  <div class="project-body">
+    <h3>Transport Management System</h3>
+    <p class="desc">Manages vehicle scheduling, routes, and driver assignments for a transport service.</p>
+    <p class="problem">Solves: scheduling conflicts and unclear route assignments done manually on paper.</p>
+    <div class="tag-row"><span class="tag">HTML, CSS, JS</span><span class="tag">MySQL</span><span class="tag">PHP Laravel</span></div>
+  </div>
+</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow">Education</div>
+        <h2>Where I'm learning it</h2>
+      </div>
+      <div class="timeline reveal">
+        <div class="tl-item">
+          <h3>Institute of Technology of Cambodia (ITE), RUPP</h3>
+          <div class="meta">B.Eng. in Information Technology · 3rd Year · In Progress</div>
+          <p>Three years into a program focused on software engineering, database systems, and web development, with coursework that moves from programming fundamentals into full system design. Relevant coursework includes:</p>
+          <div class="tag-row" style="margin-top:2px;">
+            <span class="tag">Data Structures &amp; Algorithms</span>
+            <span class="tag">Database Systems</span>
+            <span class="tag">Web Development</span>
+            <span class="tag">Object-Oriented Programming</span>
+            <span class="tag">Software Engineering</span>
+            <span class="tag">Networking</span>
+          </div>
+          <p style="margin-top:16px;">Alongside classwork, I build my own full-stack projects — the Hotel, Order, and Transport management systems above — to practice turning a course concept into a working system: designing the schema first, then the API, then the interface. That habit of building outside the syllabus is where most of my practical backend and database skills have come from.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow">Contact</div>
+        <h2>Let's talk</h2>
+        <p>Have a project, an internship opportunity, or just want to connect? Reach out.</p>
+      </div>
+      <div class="contact-grid">
+        <form class="reveal" id="contactForm">
+          <div class="field"><label for="name">Name</label><input id="name" name="name" type="text" required></div>
+          <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" required></div>
+          <div class="field"><label for="message">Message</label><textarea id="message" name="message" required></textarea></div>
+          <button type="submit" class="btn btn-primary submit-btn" id="submitBtn">
+            <span class="spinner"></span><span class="btn-label">Send Message</span>
+          </button>
+          <p class="form-note" id="formNote">Sent directly to my inbox via Formspree.</p>
+        </form>
+        <div class="contact-info reveal">
+          <a class="contact-row" href="krysenghy@gmail.com">
+            <span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="m4 6 8 7 8-7"/></svg></span>
+            <div><b>Email</b><span>krysenghy@gmail.com</span></div>
+          </a>
+          <a class="contact-row" href="https://t.me/KRYSENGHY" target="_blank" rel="noopener">
+            <span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M22.05 2.44 1.9 10.4c-1.34.55-1.33 1.31-.24 1.64l5.15 1.6 1.99 6.06c.24.66.42.92.86.92.42 0 .61-.19.85-.42l2.04-1.98 4.24 3.13c.78.43 1.34.21 1.54-.72l2.79-13.14c.3-1.14-.44-1.65-1.07-1.05Z"/></svg></span>
+            <div><b>Telegram</b><span>@KRYSENGHY</span></div>
+          </a>
+          <a class="contact-row" href="https://web.facebook.com/seng.hy.542467" target="_blank" rel="noopener">
+            <span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5.02 3.66 9.18 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.51 1.49-3.9 3.77-3.9 1.09 0 2.24.2 2.24.2v2.47h-1.26c-1.24 0-1.63.78-1.63 1.57v1.88h2.78l-.44 2.9h-2.34V22c4.78-.76 8.44-4.92 8.44-9.94Z"/></svg></span>
+            <div><b>Facebook</b><span>facebook.com/seng.hy.542467</span></div>
+          </a>
+          <a class="contact-row" href="https://github.com/krysenghy-dev" target="_blank" rel="noopener">
+            <span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55v-2.15c-3.2.7-3.88-1.36-3.88-1.36-.52-1.34-1.28-1.7-1.28-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18a11.07 11.07 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.77.12 3.06.74.8 1.19 1.83 1.19 3.09 0 4.43-2.7 5.4-5.27 5.69.42.36.78 1.07.78 2.16v3.2c0 .3.2.66.79.55A10.52 10.52 0 0 0 23.5 12c0-6.27-5.23-11.5-11.5-11.5Z"/></svg></span>
+            <div><b>GitHub</b><span>github.com/krysenghy-dev</span></div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>© <span id="year"></span>Build by Kry Senghy.</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
